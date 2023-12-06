@@ -8,16 +8,16 @@ resource "aws_vpc" "demotf_vpc" {
     Name = "adekunle-vpc"
   }
 }
-hddhdfhdhrfhshsntentwent
+
 resource "aws_internet_gateway" "demotf_igw" {
   vpc_id = aws_vpc.demotf_vpc.id
 }
-ntertnetnet
+
 resource "aws_subnet" "demotf_subnet" {
   cidr_block = "10.0.1.0/24"
   vpc_id     = aws_vpc.demotf_vpc.id
 }
-nttnwetetentertnrtnrtt
+
 resource "aws_route_table" "demotf_route_table" {
   vpc_id = aws_vpc.demotf_vpc.id
 
